@@ -1,0 +1,124 @@
+body .container {
+  padding: 0;
+  width: 1360px; }
+
+header {
+  padding: 50px 0;
+  margin: 0; }
+
+.navigation-up {
+  padding: 0;
+  margin: 0; }
+
+.social-media img {
+  margin: 0 10px; }
+
+.custom-form-control {
+  border: 1px solid #e6e6e6;
+  padding: 2px 0;
+  margin: 5px auto;
+  width: 200px;
+  margin-right: 10px; }
+
+.form-control-long {
+  width: 320px; }
+
+.custom-button-search {
+  background: transparent;
+  border: 0px solid black;
+  border-left: 4px solid red; }
+
+.custom-button-form {
+  border: 0px solid black;
+  background: transparent;
+  font-weight: 900;
+  text-transform: lowercase;
+  letter-spacing: -0.5px; }
+
+.register-link {
+  color: #5a5a5a;
+  font-weight: 900;
+  margin-left: 10px; }
+
+.auth-block {
+  padding-top: 20px; }
+
+.social-media {
+  padding-top: 10px; }
+
+.navigation-up {
+  padding-top: 10px;
+  font-weight: bolder; }
+
+a {
+  color: #222; }
+
+.banner {
+  width: 100%;
+  height: 45px;
+  background: #e9d33a; }
+
+.footer-partners img {
+  height: 80px;
+  margin: 20px; }
+
+.footer-partners-container {
+  background: #f7f7f7; }
+
+.footer-container {
+  background: #7f7f7f; }
+
+.logo-footer {
+  margin: 40px 0; }
+
+.footer-partners {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.footer p, .footer a {
+  color: #fff; }
+
+.footer-container {
+  padding: 50px 0; }
+
+.footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.footer-header {
+  font-size: 29px; }
+
+.footer-header span {
+  font-weight: bolder; }
+
+.footer-slider .navigation {
+  display: flex; }
+  .footer-slider .navigation .navigation-left {
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    cursor: pointer; }
+    .footer-slider .navigation .navigation-left img {
+      width: 30px; }
+      .footer-slider .navigation .navigation-left img:hover {
+        width: 35px; }
+  .footer-slider .navigation .navigation-right {
+    position: absolute;
+    right: 0;
+    cursor: pointer; }
+    .footer-slider .navigation .navigation-right img {
+      width: 30px; }
+      .footer-slider .navigation .navigation-right img:hover {
+        width: 35px; }
+
+.footer-slider .slider-static-container {
+  overflow: hidden;
+  margin: 0 30px; }
+
+.footer-slider .slider-content {
+  transition: all 2s ease-in; }
+  .footer-slider .slider-content img {
+    width: 178px; }
