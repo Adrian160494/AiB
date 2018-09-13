@@ -98,4 +98,60 @@ $(document).ready(function () {
 
         })
     })
-})
+});
+
+//Photogalery slider article
+
+
+$(document).ready(function () {
+    var widthOfOneThumbnail = $('.photogalery-show-imgs .thumbnail-img img').outerWidth(true);
+    var perPage = 3;
+    var startPosition = 0;
+    var count2 = 1;
+    $('.photogalery-show-imgs img').each(function () {
+        count2++;
+    });
+    var page = Math.round(count2/perPage) -1;
+    var widthPerSlide = parseFloat(perPage) * parseFloat(widthOfOneThumbnail);
+    var maxSlideWidth = page * widthPerSlide;
+    console.log("Max: "+ maxSlideWidth);
+
+    $('.nav-slider-left').bind('click',function () {
+        startPosition = startPosition + widthPerSlide;
+        console.log(startPosition);
+        if(startPosition>0){
+            startPosition =0;
+        }
+        $('.photogalery-show-imgs-container').css('transform','translateX('+startPosition+'px)');
+    });
+
+    $('.nav-slider-right').bind('click',function () {
+        startPosition = startPosition -  widthPerSlide;
+        console.log(startPosition);
+        if(-startPosition > maxSlideWidth ){
+            startPosition = -maxSlideWidth ;
+        }
+        $('.photogalery-show-imgs-container').css('transform','translateX('+startPosition+'px)');
+    });
+    $('.photogalery-show-imgs .thumbnail-img').each(function () {
+        var startImg = $('.photogalery-show-imgs .thumbnail-img').attr('data-img');
+        var startTitle =$('.photogalery-show-imgs .thumbnail-img').attr('title');
+        var startHref = $('.photogalery-show-imgs .thumbnail-img').attr('href');
+        $('.photogalery-show-img a').attr('href',startHref);
+        $('.photogalery-dynamic-text p').text(startTitle);
+        $('.photogalery-show-img img').attr('src',startImg);
+        $(this).bind('click',function () {
+            $('.photogalery-show-imgs .thumbnail-img').each(function () {
+                $(this).removeClass('active');
+            })
+            var title = $(this).attr('title');
+            var href = $(this).attr('data-href');
+            var img = $(this).attr('data-img');
+            $(this).addClass('active');
+            $('.photogalery-show-img a').attr('href',href);
+            $('.photogalery-dynamic-text p').text(title);
+            $('.photogalery-show-img img').attr('src',img);
+
+        })
+    })
+});

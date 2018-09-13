@@ -157,7 +157,37 @@ a {
   font-size: 40px; }
 
 .advert-container {
-  padding: 80px 0; }
+  padding-right: 0;
+  padding-left: 57px; }
+  .advert-container .row .ad-pop {
+    padding: 0;
+    margin: 0;
+    text-align: right; }
+
+.side-article {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0; }
+
+.side-article-info {
+  line-height: 8px;
+  font-size: 11px;
+  font-weight: bolder;
+  color: #aaa; }
+
+.side-article-header {
+  padding: 0 10px;
+  font-size: 17px;
+  font-weight: bolder; }
+
+.side-article-img {
+  margin-left: 10px; }
+  .side-article-img .img-container {
+    width: 140px;
+    height: 100px;
+    background: #ddd; }
 
 .navigation-down {
   min-height: 45px; }
@@ -270,6 +300,7 @@ a {
   margin: 40px 0; }
 
 .photogalery-article .photogalery-dynamic-content .photogalery-show-img {
+  padding: 0;
   width: 100%; }
   .photogalery-article .photogalery-dynamic-content .photogalery-show-img .photogalery-dynamic-text {
     position: absolute;
@@ -277,30 +308,96 @@ a {
     width: 150px;
     height: 150px;
     bottom: 0;
-    right: 14px;
+    right: 0px;
     background: rgba(100, 100, 100, 0.8); }
 
-.photogalery-article .photogalery-dynamic-content .photogalery-show-imgs {
-  display: flex;
-  flex-direction: row;
-  width: 540px;
-  overflow: hidden; }
-  .photogalery-article .photogalery-dynamic-content .photogalery-show-imgs .thumbnail-img {
-    width: 200px;
-    opacity: 0.5;
+.photogalery-article .photogalery-dynamic-content .photogalery-show-navigation {
+  padding: 0; }
+  .photogalery-article .photogalery-dynamic-content .photogalery-show-navigation .navigation-left {
+    position: absolute;
+    transform: rotate(180deg);
+    left: -30px;
+    top: 10px;
     cursor: pointer; }
-  .photogalery-article .photogalery-dynamic-content .photogalery-show-imgs .active {
-    opacity: 1 !important; }
-  .photogalery-article .photogalery-dynamic-content .photogalery-show-imgs img {
-    width: 160px;
-    height: 155px;
-    margin-right: 20px; }
+  .photogalery-article .photogalery-dynamic-content .photogalery-show-navigation .navigation-right {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    left: 510px; }
+  .photogalery-article .photogalery-dynamic-content .photogalery-show-navigation .photogalery-show-imgs {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    width: 510px;
+    overflow: hidden; }
+    .photogalery-article .photogalery-dynamic-content .photogalery-show-navigation .photogalery-show-imgs .thumbnail-img {
+      width: 170px;
+      opacity: 0.5;
+      cursor: pointer; }
+    .photogalery-article .photogalery-dynamic-content .photogalery-show-navigation .photogalery-show-imgs .active {
+      opacity: 1 !important; }
+    .photogalery-article .photogalery-dynamic-content .photogalery-show-navigation .photogalery-show-imgs img {
+      width: 160px;
+      height: 155px;
+      margin-right: 10px; }
+  .photogalery-article .photogalery-dynamic-content .photogalery-show-navigation .article-menu {
+    margin-top: 50px; }
+  .photogalery-article .photogalery-dynamic-content .photogalery-show-navigation .photogalery-show-imgs-container {
+    display: flex;
+    flex-direction: row;
+    transition: 1s all ease-in; }
 
 .btn-normal-menu-article {
   border: 0px solid white;
   margin: 5px 0;
   background: #eeeeee;
-  width: 170px; }
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px; }
 
 .btn-darker-menu-article {
   background: #777 !important; }
+
+.btn-custom-menu-article {
+  width: 180px;
+  height: 40px;
+  background: #fff;
+  border: 0px solid #fff;
+  position: relative; }
+
+.btn-custom-menu-article span {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  font-size: 12px;
+  color: #aaa;
+  font-weight: bolder; }
+
+.btn-custom-menu-article img {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.normal-article, .photogalery-article, .dynamic-new-article-slider {
+  margin-bottom: 20px; }
+
+.title {
+  padding: 0; }
+
+.article-detail-buttons {
+  padding-right: 0;
+  display: flex;
+  flex-direction: row; }
+
+.simple-article .article-detail-buttons {
+  margin-bottom: 25px;
+  text-align: right; }
+
+.simple-article .title h2 {
+  margin: 0; }
+
+.simple-article .info {
+  height: 40px; }
