@@ -158,10 +158,11 @@ a {
 
 .advert-container {
   padding-right: 0;
-  padding-left: 57px; }
+  padding-left: 45px; }
   .advert-container .row .ad-pop {
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
     text-align: right; }
 
 .side-article {
@@ -389,8 +390,22 @@ a {
 
 .article-detail-buttons {
   padding-right: 0;
+  padding-left: 20px;
   display: flex;
   flex-direction: row; }
+
+.btn-medium-menu-article {
+  border: 0px solid white;
+  margin: 5px 0;
+  background: #eeeeee;
+  width: 164px;
+  color: #999;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px; }
 
 .simple-article .article-detail-buttons {
   margin-bottom: 25px;
@@ -401,3 +416,55 @@ a {
 
 .simple-article .info {
   height: 40px; }
+
+.article-gallery .gallery-container .main-photo {
+  position: relative; }
+  .article-gallery .gallery-container .main-photo .image-info {
+    bottom: 50px !important; }
+
+.article-gallery .gallery-container .photos-container {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .article-gallery .gallery-container .photos-container .col-md-9 {
+    padding: 0; }
+  .article-gallery .gallery-container .photos-container .col-md-1 {
+    padding: 0; }
+  .article-gallery .gallery-container .photos-container .col-md-2 {
+    padding: 0; }
+  .article-gallery .gallery-container .photos-container .img-container-smaller {
+    margin-left: 10px !important;
+    width: 90% !important; }
+  .article-gallery .gallery-container .photos-container .img-container, .article-gallery .gallery-container .photos-container .img-container-smaller {
+    width: 100%;
+    height: 80px;
+    background: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #777;
+    font-weight: bolder; }
+  .article-gallery .gallery-container .photos-container .img-container-tran {
+    background: transparent;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #777;
+    font-weight: bolder; }
+
+.company-info-container {
+  width: 100%;
+  height: 300px;
+  background: #ddd;
+  margin-bottom: 20px; }
+
+.full-article-content p {
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0;
+  margin-bottom: 20px; }

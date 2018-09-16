@@ -9,10 +9,10 @@ var sass = require('gulp-sass');
 
 gulp.task('server',function () {
     browserSync({
-        server: './'
+        server: './index.php'
     });
 
-    gulp.watch('./index.html',['reload']);
+    gulp.watch('./index.php',['reload']);
     gulp.watch('./css/main.scss',['sass','reload']);
     gulp.watch('./js/sliders.js',['reload']);
 });

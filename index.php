@@ -87,31 +87,67 @@
                             <div class="author">autor</div>
                         </div>
                         <div class="col-md-4" style="padding:0;">
-                            <div class="col-xs-12 article-detail-buttons">
-                                <button class="btn-normal-menu-article"><img src="/img/fb-mini.png" width="24"/> <span>udostępnij</span></button>
-                                <button class="btn-normal-menu-article"><img src="/img/save.png" width="24"/> <span>zapisz w bibliotece</span></button>
+                            <div class="article-detail-buttons pull-right">
+                                <button class="btn-medium-menu-article"><img src="/img/fb-mini.png" width="24"/> <span>udostępnij</span></button>
+                                <button class="btn-medium-menu-article"><img src="/img/save.png" width="24"/> <span>zapisz w bibliotece</span></button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-xs-8">
-                <div class="image-container">
-                    <img src="/img/news.png"/>
-                    <div class="image-info">
+                <div class="image-container article-gallery">
+                    <div class="gallery-container">
+                        <div class="main-photo">
+                            <img src="img/article-example.png"/>
+                            <div class="image-info">
+                            </div>
+                        </div>
+                        <div class="row photos-container">
+                            <div class="col-md-9">
+                                <?php for($i=0;$i<4;$i++): ?>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <div class="img-container">
+
+                                            </div>
+                                        </a>
+                                    </div>
+                                <?php endfor; ?>
+                            </div>
+                            <div class="col-md-1">
+                                <div class="img-container-tran">
+                                   <span>...</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#">
+                                    <div class="img-container-smaller">
+                                        <span>+12</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="article-content">
-                    <div class="col-md-9 article-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                <div class="company-info-container">
+
+                </div>
+                <div class="full-article-content">
+                    <?php for($i=0;$i<4;$i++): ?>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    <?php endfor; ?>
                 </div>
             </div>
             <div class="col-xs-4 advert-container text-right">
-                <div class="col-xs-12">
-                    <img src="/img/advert1.png" width="300px"/>
+                <div class="advert-banner">
+                    <img src="/img/advert1.png" width="100%"/>
                 </div>
-                <div class="col-xs-12 advert-container">
+                <div>
                     <h3 class="text-right"><strong>architektura</strong></h3>
                     <h5 class="text-right">popularne artykuly</h5>
                     <div class="side-article text-right">
