@@ -1,7 +1,6 @@
 {
   "name": "aib",
   "version": "1.0.0",
-  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +8,17 @@
   "author": "Adrian Ciejka",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.24.7",
+    "browser-sync": "^2.26.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adrian160494/AiB.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adrian160494/AiB/issues"
+  },
+  "homepage": "https://github.com/Adrian160494/AiB#readme",
+  "description": ""
 }
